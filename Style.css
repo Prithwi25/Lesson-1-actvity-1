@@ -1,0 +1,23 @@
+    h1 {
+
+    color: darkblue;
+
+    text-align: center;   }
+    h2,p{
+        color:darkgreen;
+    }
+    h1{
+        color:blueviolet;
+    }
+    .highlight{
+        background-color: brown;
+    }
+    #unique{
+        font-weight: bold;
+    }
+    h2,p{
+        color:blanchedalmond;
+    }
+    *{
+        font-family:"Courier New";
+    }
