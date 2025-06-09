@@ -1,0 +1,27 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5d93b;
+    color: white;
+}
+.cascading-text {
+    display: inline-block;
+    text-align: center;
+}
+.letter {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: cascade 0.5s forwards;
+    animation-delay: calc(0.1s * var(--index));
+}
+
+@keyframes cascade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }   }
