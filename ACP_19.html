@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="myh"></h1>
+    <p id="myp1"></p>
+    <p id="myp2"></p>
+    <h4 id="multiplication"></h4>
+
+    <h1 id="myh1"></h1>
+    <p id="myp3"></p>
+    <p id="myp4"></p>
+    <h4 id="division"></h4>
+
+    <h1 id="myh2"></h1>
+    <p id="myp5"></p>
+    <p id="myp6"></p>
+    <h4 id="subtraction"></h4>
+
+    <h1 id="myh3"></h1>
+    <p id="myp7"></p>
+    <p id="myp8"></p>
+    <h4 id="summation"></h4>
+
+
+    <script>
+        var num1, num2, multiplication
+        num1 = 5
+        num2 = 6
+        multiplication = num1 * num2
+        document.getElementById("myh").innerHTML = "Multiplication in JS"
+        document.getElementById("myp1").innerHTML = "1<sup>st</sup> Number :" + num2
+        document.getElementById("myp2").innerHTML = "2 <sup>nd</sup> Number :" + num1
+        document.getElementById("multiplication").innerHTML = "multiplication:" + multiplication
+
+    </script>
+    <script>
+        var num1, num2, division
+        num1 = 30
+        num2 = 6
+        division = num1 / num2
+        document.getElementById("myh1").innerHTML = "Division in JS"
+        document.getElementById("myp3").innerHTML = "1<sup>st</sup> number :" + num1
+        document.getElementById("myp4").innerHTML = "2<sup>nd</sup> number :" + num2
+        document.getElementById("division").innerHTML = "Division:" + division
+
+    </script>
+
+    <script>
+        var num1, num2, subtraction
+        num1 = 10
+        num2 = 2
+        subtraction = num1 - num2
+        document.getElementById("myh2").innerHTML = "Subtraction in JS"
+        document.getElementById("myp5").innerHTML = "1<sup>st</sup> number:" + num1
+        document.getElementById("myp6").innerHTML = "2<sup>nd</sup> number:" + num2
+        document.getElementById("subtraction").innerHTML = "subtraction:" + subtraction
+
+
+
+    </script>
+
+    <script>
+        var num1, num2, sum
+        num1 = 10
+        num2 = 2
+        sum = num1 + num2
+        document.getElementById("myh3").innerHTML = "Summation in JS"
+        document.getElementById("myp7").innerHTML = "1<sup>st</sup> number:" + num1
+        document.getElementById("myp8").innerHTML = "2<sup>nd</sup> number:" + num2
+        document.getElementById("summation").innerHTML = "sum :" + sum
+    </script>
+</body>
+
+</html>
