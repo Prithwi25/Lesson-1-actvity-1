@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Methods and Loops Project</title>
+</head>
+
+<body>
+    <h2>Methods and Loops Output</h2>
+    <p id="randomNumbers"></p>
+    <p id="currentDate"></p>
+    <p id="roundedNumber"></p>
+    <p id="dayName"></p>
+
+    <script>
+        let numbersText = "Random Set of Numbers:<br>";
+        for (let i = 0; i < 5; i++) {
+            let randomNum = Math.random() * 100;
+            numbersText += randomNum.toFixed(2) + "<br>";
+        }
+        document.getElementById("randomNumbers").innerHTML = numbersText;
+
+
+        let randomNumber = Math.random() * 50;
+        let roundedNumber = Math.round(randomNumber);
+        document.getElementById("roundedNumber").innerHTML = "<b>Random Number:</b> " + randomNumber.toFixed(2) + " | <b>Rounded:</b> " + roundedNumber;
+
+        let currentDate = new Date();
+        document.getElementById("currentDate").innerHTML = "<b>Current Date and Time:</b> " + currentDate;
+    </script>
+</body>
+
+</html>
