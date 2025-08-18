@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array POP & JOIN</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Arrays</h1>
+
+    <p id="POP"></p>
+    <p id="JOIN"></p>
+
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+
+        fruits.pop();
+        document.getElementById("POP").innerHTML = "Pop: " + fruits;
+
+        let text = fruits.join(" > ");
+        document.getElementById("JOIN").innerHTML = "Join: " + text;
+    </script>
+
+</body>
+
+</html>
