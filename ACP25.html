@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Example</title>
+</head>
+
+<body>
+    <p id="fruit"></p>
+
+    <script>
+        class Fruit {
+            constructor(food) {
+                this.fruitname = food;
+            }
+            present() {
+                return 'I want to eat ' + this.fruitname;
+            }
+        }
+
+        class Model extends Fruit {
+            constructor(food, color) {
+                super(food);
+                this.color = color;
+            }
+            show() {
+                return this.present() + ', it is ' + this.color;
+            }
+        }
+
+        let myFruit = new Model("Apple", "Red");
+        document.getElementById("fruit").innerHTML = myFruit.show();
+    </script>
+</body>
+
+</html>
