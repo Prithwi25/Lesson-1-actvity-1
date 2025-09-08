@@ -1,0 +1,10 @@
+function greetUser(name, callback) {
+  console.log("Hello, " + name + "!");
+  callback(); // Invokes the callback function
+}
+
+function sayGoodbye() {
+  console.log("Goodbye!");
+}
+
+greetUser("Alice", sayGoodbye); // sayGoodbye is passed as a callback
