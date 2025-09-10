@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>JavaScript async / await</h2>
+    <h1 id="ACP"></h1>
+    <script>
+        async function product(a, b) {
+            let response = await a * b;
+            display(response);
+        }
+        function display(some) {
+            document.getElementById("ACP").innerHTML = some;
+        }
+        product(3, 2);
+    </script>
+</body>
+
+</html>
