@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Handle Errors in JS</title>
+</head>
+<body>
+  <h2>Simple Error Handling</h2>
+  <p id="output"></p>
+
+  <script>
+    try {
+      // Making an error on purpose
+      let x = y + 5; // 'y' is not defined
+    } catch (error) {
+      document.getElementById("output").innerHTML =
+        "Error: " + error.message;
+    }
+  </script>
+</body>
+</html>
