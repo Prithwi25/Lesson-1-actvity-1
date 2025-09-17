@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Name & Number Validator</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 8px 16px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            margin-top: 15px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .error {
+            color: #dc3545;
+        }
+
+        .success {
+            color: #28a745;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <p>Only <b>Prithwi</b>, <b>Tajbiha</b>, or <b>Zaien</b> can enter their name.</p>
+        <input id="name" type="text" placeholder="Enter your name" required>
+        <br>
+        <input id="id1" type="number" min="5" max="18" required placeholder="Age">
+        <br>
+        <button type="button" onclick="checkValidity()">Validate</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function checkValidity() {
+            var nameElement = document.getElementById("name");
+            var inputElement = document.getElementById("id1");
+            var resultElement = document.getElementById("result");
+
+            // Reset message
+            resultElement.textContent = "";
+
+            if (!nameElement.value) {
+                resultElement.textContent = "Please enter your name.";
+                resultElement.className = "error";
+            } else if (!inputElement.value) {
+                resultElement.textContent = "Please enter a number.";
+                resultElement.className = "error";
+            } else if (inputElement.checkValidity()) {
+                resultElement.textContent = "Hello " + nameElement.value + "! ✅ Your number is " + inputElement.value;
+                resultElement.className = "success";
+            } else {
+                resultElement.textContent = inputElement.validationMessage;
+                resultElement.className = "error";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
