@@ -3,15 +3,50 @@
 
 <head>
 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kid's Education</title>
-    <style>
-        .custom_position {
-            position: absolute;
-            bottom: 10%;
-            left: 15%;
+    <title>StudHub</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="motion.png">
 
+
+
+
+    <style>
+        .subject-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+    
+        .subject-grid .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            background-color: #fff;
+        }
+    
+        .subject-grid .card img {
+            width: 100%;
+            height: 300px;
+            /* fixed height like in your screenshot */
+            object-fit: cover;
+            /* keeps the image proportion */
+        }
+    
+        .subject-grid .card-body {
+            padding: 10px;
+        }
+    
+        .subject-grid .card h5 {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+    
+        .subject-grid .btn {
+            margin-bottom: 10px;
         }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -22,7 +57,10 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">StudHub</a>
+                <a class="navbar-brand" href="#">
+                    <img src="motion.png" alt="StudHub Logo" style="height: 70px; width: auto; margin-right: 10px;">
+                    StudHub
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -143,432 +181,401 @@
 
 
         <!--Subjects 9-->
-        <h1>Class 9-10</h1>
-        <div class="d-flex flex-wrap gap-4 p-5">
-            <div class="card m-2" style="width: 18rem;">
-
-
-                <img src="Class-9-10-Bangla-Sahapath.jpg" class="card-img-top" alt="...">
+        <h1>Class 9-10 Subjects</h1>
+        <div class="subject-grid">
+            <div class="card">
+                <img src="Class-9-10-Bangla-Sahapath.jpg" class="card-img-top" alt="Bangla Shahapath">
                 <div class="card-body">
                     <h5 class="card-title">Bangla Shahapath</h5>
-
-                    <a href="#" class="btn btn-primary">Learn more</a>
+                    <a href="বাংলা-সহপাঠ-nctbbook.com.pdf" class="btn btn-primary">Download</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="Class-9-10-Bangla-Sahitto.jpg" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="Class-9-10-Bangla-Sahitto.jpg" class="card-img-top" alt="Bangla Sahitto">
                 <div class="card-body">
-                    <h5 class="card-title">Bangla Shahitto</h5>
-
-                    <a href="#" class="btn btn-primary">Learn more</a>
+                    <h5 class="card-title">Bangla Sahitto</h5>
+                    <a href="বাংলা-nctbbook.com.pdf" class="btn btn-primary">Download</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="Bangla Grammar Class 9.jpeg" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="Bangla Grammar Class 9.jpeg" class="card-img-top" alt="Bangla Byakoron">
                 <div class="card-body">
                     <h5 class="card-title">Bangla Byakoron</h5>
-
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="English for Today Class 9.jpeg" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="English for Today Class 9.jpeg" class="card-img-top" alt="English for Today">
                 <div class="card-body">
-                    <h5 class="card-title">English for today</h5>
-
+                    <h5 class="card-title">English for Today</h5>
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="Grammar Class 9.webp" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="Grammar Class 9.webp" class="card-img-top" alt="English Grammar">
                 <div class="card-body">
                     <h5 class="card-title">English Grammar</h5>
-
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="Class-9-10-Mathematics.jpg" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="Class-9-10-Mathematics.jpg" class="card-img-top" alt="Mathematics">
                 <div class="card-body">
                     <h5 class="card-title">Mathematics</h5>
-
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="Higher maths Class 9.webp" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="Higher maths Class 9.webp" class="card-img-top" alt="Higher Mathematics">
                 <div class="card-body">
                     <h5 class="card-title">Higher Mathematics</h5>
-
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="Science-Class-9.webp" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="Science-Class-9.webp" class="card-img-top" alt="Science">
                 <div class="card-body">
                     <h5 class="card-title">Science</h5>
-
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-
-
-            <div class="card" style="width: 18rem;">
-                <img src="Physics-Class-9.webp" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="Physics-Class-9.webp" class="card-img-top" alt="Physics">
                 <div class="card-body">
                     <h5 class="card-title">Physics</h5>
-
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="Chemistry-Class-9.webp" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="Chemistry-Class-9.webp" class="card-img-top" alt="Chemistry">
                 <div class="card-body">
                     <h5 class="card-title">Chemistry</h5>
-
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="Biology-Class-9.webp" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="Biology-Class-9.webp" class="card-img-top" alt="Biology">
                 <div class="card-body">
                     <h5 class="card-title">Biology</h5>
-
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="ICT-Class-9.webp" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="ICT-Class-9.webp" class="card-img-top" alt="ICT">
                 <div class="card-body">
                     <h5 class="card-title">ICT</h5>
-
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-
-
-
-
-            <div class="card" style="width: 18rem;">
-                <img src="BGSt-Class-9.webp" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="BGSt-Class-9.webp" class="card-img-top" alt="BGS">
                 <div class="card-body">
                     <h5 class="card-title">BGS</h5>
-
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-
-
-            <div class="card" style="width: 18rem;">
-                <img src="History-Class-9.webp" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="History-Class-9.webp" class="card-img-top" alt="History">
                 <div class="card-body">
                     <h5 class="card-title">History</h5>
-
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="Geography-Class-9.webp" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="Geography-Class-9.webp" class="card-img-top" alt="Geography">
                 <div class="card-body">
                     <h5 class="card-title">Geography</h5>
-
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="Civics-Class-9.webp" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="Civics-Class-9.webp" class="card-img-top" alt="Civics">
                 <div class="card-body">
                     <h5 class="card-title">Civics</h5>
-
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-
-
-
-            <div class="card" style="width: 18rem;">
-                <img src="Religion-Class-9.webp" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="Religion-Class-9.webp" class="card-img-top" alt="Religion">
                 <div class="card-body">
                     <h5 class="card-title">Religion</h5>
-
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-
-
-
-            <!--8-->
-            <div>
-                <h1>Class 8</h1>
-
-
-                <div class="d-flex flex-wrap gap-4 p-5">
-                    <div class="card m-2" style="width: 18rem;">
-
-                        <img src="Class-8-Bangla-Grammar.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Bangla Byakoron</h5>
-
-                            <a href="#" class="btn btn-primary">Learn more</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="Shahitto konika Class 8.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Shahitto Konika</h5>
-
-                            <a href="#" class="btn btn-primary">Learn more</a>
-                        </div>
-                    </div>
-
+        </div>
+        
+        
+        
+        <!--8-->
+        <h1>Class 8 Subjects</h1>
+        <div class="subject-grid">
+            <div class="card">
+                <img src="Class-8-Bangla-Grammar.jpg" class="card-img-top" alt="Bangla Byakoron">
+                <div class="card-body">
+                    <h5 class="card-title">Bangla Byakoron</h5>
+                    <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="Anondo Path Class 8.webp" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="Shahitto konika Class 8.jpeg" class="card-img-top" alt="Shahitto Konika">
+                <div class="card-body">
+                    <h5 class="card-title">Shahitto Konika</h5>
+                    <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="Anondo Path Class 8.webp" class="card-img-top" alt="Anondo Path">
                 <div class="card-body">
                     <h5 class="card-title">Anondo Path</h5>
-
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="Math Class 8.webp" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="Math Class 8.webp" class="card-img-top" alt="Mathematics">
                 <div class="card-body">
                     <h5 class="card-title">Mathematics</h5>
-
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="Phy.edu. Class 8.webp" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="Phy.edu. Class 8.webp" class="card-img-top" alt="Physical Education">
                 <div class="card-body">
                     <h5 class="card-title">Physical Education</h5>
-
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="ICT Class 8.webp" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="ICT Class 8.webp" class="card-img-top" alt="ICT">
                 <div class="card-body">
                     <h5 class="card-title">ICT</h5>
-
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="English-For-Today-Class-8.jpg" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="English-For-Today-Class-8.jpg" class="card-img-top" alt="English For Today">
                 <div class="card-body">
-                    <h5 class="card-title">English for today</h5>
-
+                    <h5 class="card-title">English for Today</h5>
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-
-
-            <div class="card" style="width: 18rem;">
-                <img src="Eng. Gram Class 8.jpeg" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="Eng. Gram Class 8.jpeg" class="card-img-top" alt="English Grammar">
                 <div class="card-body">
                     <h5 class="card-title">English Grammar</h5>
-
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="BGSt class 8.webp" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="BGSt class 8.webp" class="card-img-top" alt="BGS">
                 <div class="card-body">
                     <h5 class="card-title">BGS</h5>
-
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="Science class 8.jpeg" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="Science class 8.jpeg" class="card-img-top" alt="Science">
                 <div class="card-body">
                     <h5 class="card-title">Science</h5>
-
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="Religion Class 8.webp" class="card-img-top" alt="...">
+        
+            <div class="card">
+                <img src="Religion Class 8.webp" class="card-img-top" alt="Religion">
                 <div class="card-body">
                     <h5 class="card-title">Religion</h5>
-
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
-
-            <!--7-->
-
-
-            <div class="d-flex flex-wrap gap-4 p-5">
-                <div class="card m-2" style="width: 18rem;">
-
-                    <img src="Ananda path class 7.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Anondo Path</h5>
-
-                        <a href="#" class="btn btn-primary">Learn more</a>
-                    </div>
+        </div>
+        
+        <!--7-->
+        <h1>Class 7 Subjects</h1>
+        
+        <div class="subject-grid">
+            <div class="card">
+                <img src="Ananda path class 7.webp" class="card-img-top" alt="Anondo Path">
+                <div class="card-body">
+                    <h5 class="card-title">Anondo Path</h5>
+                    <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="English for Today Class 7.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">English For Today</h5>
-
-                        <a href="#" class="btn btn-primary">Learn more</a>
-                    </div>
+            </div>
+        
+            <div class="card">
+                <img src="English for Today Class 7.jpeg" class="card-img-top" alt="English For Today">
+                <div class="card-body">
+                    <h5 class="card-title">English For Today</h5>
+                    <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="Shoptoborna Class 7.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Shoptoborno</h5>
-
-                        <a href="#" class="btn btn-primary">Learn more</a>
-                    </div>
+            </div>
+        
+            <div class="card">
+                <img src="Shoptoborna Class 7.webp" class="card-img-top" alt="Shoptoborno">
+                <div class="card-body">
+                    <h5 class="card-title">Shoptoborno</h5>
+                    <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="Class-7-Bangla-Byakaron-O-Nirmiti.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Bangla Byakoron O Nirmito</h5>
-
-                        <a href="#" class="btn btn-primary">Learn more</a>
-                    </div>
+            </div>
+        
+            <div class="card">
+                <img src="Class-7-Bangla-Byakaron-O-Nirmiti.jpg" class="card-img-top" alt="Bangla Byakoron O Nirmito">
+                <div class="card-body">
+                    <h5 class="card-title">Bangla Byakoron O Nirmito</h5>
+                    <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
-
-                <div class="card" style="width: 18rem;">
-                    <img src="07 Math.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Mathematics</h5>
-
-                        <a href="#" class="btn btn-primary">Learn more</a>
-                    </div>
+            </div>
+        
+            <div class="card">
+                <img src="07 Math.png" class="card-img-top" alt="Mathematics">
+                <div class="card-body">
+                    <h5 class="card-title">Mathematics</h5>
+                    <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="Science Class 7.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Science</h5>
-
-                        <a href="#" class="btn btn-primary">Learn more</a>
-                    </div>
+            </div>
+        
+            <div class="card">
+                <img src="Science Class 7.webp" class="card-img-top" alt="Science">
+                <div class="card-body">
+                    <h5 class="card-title">Science</h5>
+                    <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="BGst class 7.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">BGS</h5>
-
-                        <a href="#" class="btn btn-primary">Learn more</a>
-                    </div>
+            </div>
+        
+            <div class="card">
+                <img src="BGst class 7.jpeg" class="card-img-top" alt="BGS">
+                <div class="card-body">
+                    <h5 class="card-title">BGS</h5>
+                    <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="Grammar Class 7.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">English Grammar</h5>
-
-                        <a href="#" class="btn btn-primary">Learn more</a>
-                    </div>
+            </div>
+        
+            <div class="card">
+                <img src="Grammar Class 7.jpeg" class="card-img-top" alt="English Grammar">
+                <div class="card-body">
+                    <h5 class="card-title">English Grammar</h5>
+                    <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
-
-
-                <div class="card" style="width: 18rem;">
-                    <img src="ICT Class 7.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">ICT</h5>
-
-                        <a href="#" class="btn btn-primary">Learn more</a>
-                    </div>
+            </div>
+        
+            <div class="card">
+                <img src="ICT Class 7.jpeg" class="card-img-top" alt="ICT">
+                <div class="card-body">
+                    <h5 class="card-title">ICT</h5>
+                    <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="Reli Class 7.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Religion</h5>
-
-                        <a href="#" class="btn btn-primary">Learn more</a>
-                    </div>
+            </div>
+        
+            <div class="card">
+                <img src="Reli Class 7.jpeg" class="card-img-top" alt="Religion">
+                <div class="card-body">
+                    <h5 class="card-title">Religion</h5>
+                    <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
-
-
-                <!--6-->
-                <div class="d-flex flex-wrap gap-4 p-5">
-                    <div class="card m-2" style="width: 18rem;">
-
-                        <img src="Ananda path Class 6.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Anondo Path</h5>
-
-                            <a href="#" class="btn btn-primary">Learn more</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="Class-6-English-For-Today.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">English For Today </h5>
-
-                            <a href="#" class="btn btn-primary">Learn more</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="Math Class 6.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Mathematics</h5>
-
-                            <a href="#" class="btn btn-primary">Learn more</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="Class-6-Bangla-Bakaron.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Bangla Byakoron</h5>
-
-                            <a href="#" class="btn btn-primary">Learn more</a>
-                        </div>
-                    </div>
-
-                    <div class="card" style="width: 18rem;">
-                        <img src="English Gram Class 6.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">English Grammar</h5>
-
-                            <a href="#" class="btn btn-primary">Learn more</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="Science Class 6.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Science</h5>
-
-                            <a href="#" class="btn btn-primary">Learn more</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="ICT Class 6.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">ICT</h5>
-
-                            <a href="#" class="btn btn-primary">Learn more</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="BGSt Class 6.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">BGS</h5>
-
-                            <a href="#" class="btn btn-primary">Learn more</a>
-                        </div>
-                    </div>
-
-
-                    <div class="card" style="width: 18rem;">
-                        <img src="Religion-Class-6.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Religion</h5>
-
-                            <a href="#" class="btn btn-primary">Learn more</a>
-                        </div>
-                    </div>
-
+            </div>
+        </div>
+        <!--6-->
+        <h1>Class 6 Subjects</h1>
+        
+        <div class="subject-grid">
+        
+            <div class="card">
+                <img src="Ananda path Class 6.jpeg" class="card-img-top" alt="Ananda Path">
+                <div class="card-body">
+                    <h5 class="card-title">Ananda Path</h5>
+                    <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="Class-6-Bangla-Bakaron.jpg" class="card-img-top" alt="Bangla Byakoron">
+                <div class="card-body">
+                    <h5 class="card-title">Bangla Byakoron</h5>
+                    <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="Class-6-English-For-Today.jpg" class="card-img-top" alt="English For Today">
+                <div class="card-body">
+                    <h5 class="card-title">English For Today</h5>
+                    <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="English Gram Class 6.jpeg" class="card-img-top" alt="English Grammar">
+                <div class="card-body">
+                    <h5 class="card-title">English Grammar</h5>
+                    <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="Math Class 6.webp" class="card-img-top" alt="Mathematics">
+                <div class="card-body">
+                    <h5 class="card-title">Mathematics</h5>
+                    <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="Science Class 6.webp" class="card-img-top" alt="Science">
+                <div class="card-body">
+                    <h5 class="card-title">Science</h5>
+                    <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="BGSt Class 6.jpeg" class="card-img-top" alt="Bangladesh & Global Studies">
+                <div class="card-body">
+                    <h5 class="card-title">Bangladesh & Global Studies</h5>
+                    <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="ICT Class 6.jpg" class="card-img-top" alt="ICT">
+                <div class="card-body">
+                    <h5 class="card-title">ICT</h5>
+                    <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="Religion-Class-6.jpg" class="card-img-top" alt="Religion">
+                <div class="card-body">
+                    <h5 class="card-title">Religion</h5>
+                    <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+            </div>
+        
+        </div>
 
     </main>
     <footer>
@@ -577,22 +584,78 @@
             <h4>Social Media</h4>
             <h1>Let's be friends</h1>
             <div class="social-media-container">
-                <div class="card p-3 d-flex flex-row gap-3"><div><h4>Email</h4> </div>
-                <div><img src="gmail.png" alt="" height="50px"> </div> </div>
+                <div class="card p-3 d-flex flex-row gap-5">
+                    <div>
+                        <h4>Email</h4>
 
-        </div>
+                    </div>
 
-        <div class="container text-muted text-center py-3 mt-5">
+                    <div><img src="gmail.png" alt="" height="50px"> </div>
+                    <h5>
+                        <a href="mailto:prithwib141@gmail.com">prithwib141@gmail.com</a>
+                    </h5>
+                </div>
 
-            <h5>
 
-                Copyright © 2025 |
 
-                <a class="text-warning text-decoration-none" href="#about">All Rights Are Reserved By StudHub</a>
 
-            </h5>
 
-        </div>
+
+                <div class="card p-3 d-flex flex-row gap-4">
+                    <div>
+                        <h4>Youtube</h4>
+                    </div>
+                    <div><img src="youtube.png" alt="" height="50px"> </div>
+                    <h5>
+                        <a href="https://www.youtube.com/@prithwisenglish2010">Prithwi's English</a>
+                    </h5>
+                </div>
+
+
+
+                <div class="card p-3 d-flex flex-row gap-5">
+                    <div>
+                        <h4>Github</h4>
+                    </div>
+                    <div><img src="github.png" alt="" height="50px"> </div>
+                    <h5>
+                    <a href="https://github.com/Prithwi25" target="_blank">GitHub</a>
+                </h5>
+                </div>
+
+                <div class="card p-3 d-flex flex-row gap-3">
+                    <div>
+                        <h4>Instagram</h4>
+                    </div>
+                    <div><img src="instagram.png" alt="" height="50px"> </div>
+                    <h5>
+                    <a href="https://www.instagram.com/purabi_2428/" >StudHub</a>
+                </h5>
+                </div>
+
+
+                <div class="card p-3 d-flex flex-row gap-4">
+                    <div>
+                        <h4>Facebook</h4>
+                    </div>
+                    <div><img src="facebook.png" alt="" height="50px"> </div>
+                 <h5>   
+                    <a href="https://www.facebook.com/unique.content2" >StudHub</a>
+                </h5>
+                </div>
+
+                <div class="container text-muted text-center py-3 mt-5">
+
+                    <h5>
+
+                        Copyright © 2025 |
+
+                        <a class="text-warning text-decoration-none" href="#about">All Rights Are Reserved By
+                            StudHub</a>
+
+                    </h5>
+
+                </div>
 
 
     </footer>
