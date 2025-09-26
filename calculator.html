@@ -1,7 +1,55 @@
-<input type="number" id="myInput1" placeholder="Enter number 1...">
+<!DOCTYPE html>
+<html lang="en">
 
-<input type="number" id="myInput2" placeholder="Enter number 2...">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
 
-<button onclick="add()">Get Input</button>
+<body class="bg-dark d-flex justify-content-center align-items-center vh-100">
 
-<p id="output"></p>
+    <div class="card shadow-lg" style="width: 280px; border-radius: 20px; overflow:hidden;">
+        <!-- Display -->
+        <div id="display" class="bg-black text-white p-4 text-end fs-3" style="min-height:80px;">
+        </div>
+
+        <!-- Keyboard -->
+        <div id="keyboard-container" class="p-3 bg-dark">
+            <div id="keyboard" class="d-grid gap-2" style="grid-template-columns: repeat(4, 1fr);">
+
+                <button type="button" class="btn btn-warning operator fs-4" id="*">*</button>
+                <button type="button" class="btn btn-warning operator fs-4" id="/">/</button>
+                <button type="button" class="btn btn-warning operator fs-4" id="-">-</button>
+                <button type="button" class="btn btn-warning operator fs-4" id="+">+</button>
+
+                <button type="button" class="btn btn-light number fs-4" id="7">7</button>
+                <button type="button" class="btn btn-light nunber fs-4" id="8">8</button>
+                <button type="button" class="btn btn-light number fs-4" id="9">9</button>
+                <button type="button" class="btn btn-success operator fs-4" id="=">=</button>
+
+                <button type="button" class="btn btn-light number fs-4" id="4">4</button>
+                <button type="button" class="btn btn-light nunber fs-4" id="5">5</button>
+                <button type="button" class="btn btn-light number fs-4" id="6">6</button>
+                <button type="button" class="btn btn-danger operator fs-4" id="clear">C</button>
+
+                <button type="button" class="btn btn-light nunber fs-4" id="1">1</button>
+                <button type="button" class="btn btn-light number fs-4" id="2">2</button>
+                <button type="button" class="btn btn-light nunber fs-4" id="3">3</button>
+                <button type="button" class="btn btn-danger operator fs-4" id="Backspace">CE</button>
+
+                <button type="button" class="btn btn-light number fs-4" id="0">0</button>
+                <button type="button" class="btn btn-light number fs-4" id=".">.</button>
+                <button type="button" class="btn btn-warning operator fs-4" id="%">%</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
