@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank App</title>
+</head>
+
+<body style="text-align: center; margin-top: 100px;">
+
+    <h2>Bank App</h2>
+
+    <label for="amount">Enter Transaction Amount</label>
+    <input type="number" id="amount" min="0" value="0">
+
+    <div>
+        <button onclick="credit()">Credit</button>
+        <button onclick="debit()">Debit</button>
+    </div>
+
+    <p id="balance">Your Account Balance is : Rs.67</p>
+
+    <script>
+        let balance = 67;
+
+        function checkAmount(amount) {
+            if (amount <= 0) {
+                alert("Please enter amount greater than 0");
+                return false;
+            } else if (amount > 1000) {
+                alert("Please enter amount less than or equal to 1000");
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        function credit() {
+            const amount = Number(document.getElementById("amount").value);
+            if (!checkAmount(amount)) return;
+
+            balance += amount;
+            alert("Amount credited successfully!");
+            document.getElementById("balance").textContent = "Your Account Balance is : Rs." + balance;
+        }
+
+        function debit() {
+            const amount = Number(document.getElementById("amount").value);
+            if (!checkAmount(amount)) return;
+
+            if (amount > balance) {
+                alert("Insufficient balance!");
+                return;
+            }
+
+            balance -= amount;
+            alert("Amount debited successfully!");
+            document.getElementById("balance").textContent = "Your Account Balance is : Rs." + balance;
+        }
+    </script>
+
+</body>
+
+</html>
